@@ -1,9 +1,10 @@
 import React from "react";
+import CarouselBox from "../Components/CarouselBox";
 
 const Home = () => {
   return (
     <div>
-      <h1>Hello</h1>
+      <CarouselBox />
     </div>
   );
 };
