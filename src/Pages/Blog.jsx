@@ -60,7 +60,8 @@ const Blog = () => {
             <ListGroup variant="flush">
               <ListGroup.Item>HTML/CSS</ListGroup.Item>
               <ListGroup.Item>Javascript</ListGroup.Item>
-              <ListGroup.Item>Pyton</ListGroup.Item>
+              <ListGroup.Item>Typescript</ListGroup.Item>
+              <ListGroup.Item>Python</ListGroup.Item>
               <ListGroup.Item>Java</ListGroup.Item>
               <ListGroup.Item>C++</ListGroup.Item>
             </ListGroup>
