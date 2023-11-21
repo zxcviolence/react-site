@@ -7,7 +7,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
@@ -25,7 +25,7 @@ const Header = () => {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand>
             <img
               src={logo}
               height="30"
@@ -38,10 +38,46 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about">About</Nav.Link>
-              <Nav.Link href="/contacts">Contacts</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "#ccc",
+                  marginRight: "7px",
+                }}
+                to="/"
+              >
+                Home
+              </Link>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "#ccc",
+                  marginRight: "7px",
+                }}
+                to="/about"
+              >
+                About
+              </Link>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "#ccc",
+                  marginRight: "7px",
+                }}
+                to="/contacts"
+              >
+                Contacts
+              </Link>
+              <Link
+                style={{
+                  textDecoration: "none",
+                  color: "#ccc",
+                  marginRight: "7px",
+                }}
+                to="/blog"
+              >
+                Blog
+              </Link>
             </Nav>
             <Form className="d-flex">
               <FormControl

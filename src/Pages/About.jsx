@@ -36,7 +36,7 @@ const About = () => {
                 <img
                   className="img-fluid"
                   width={760}
-                  src="https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src="https://blog.crowd.br.com/wp-content/uploads/2022/06/img-contratar-designer-grafico.jpg"
                   alt="Design"
                 />
                 <p>
