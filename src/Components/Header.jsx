@@ -12,7 +12,7 @@ import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Blog from "../Pages/Blog";
 import Contacts from "../Pages/Contacts";
-import logo from "./logo192.png";
+import logo from "../assets/logo192.svg";
 
 const Header = () => {
   return (
