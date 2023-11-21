@@ -18,7 +18,7 @@ const Contacts = () => {
         </Form.Group>
 
         <Form.Group controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
+          <Form.Check className="mt-2 mb-2" type="checkbox" label="Check me out" />
           <Button variant="primary" type="submit">
             Submit
           </Button>
