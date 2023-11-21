@@ -42,7 +42,7 @@ const Header = () => {
                 style={{
                   textDecoration: "none",
                   color: "#ccc",
-                  marginRight: "7px",
+                  marginRight: "15px",
                 }}
                 to="/"
               >
@@ -52,7 +52,7 @@ const Header = () => {
                 style={{
                   textDecoration: "none",
                   color: "#ccc",
-                  marginRight: "7px",
+                  marginRight: "15px",
                 }}
                 to="/about"
               >
@@ -62,7 +62,7 @@ const Header = () => {
                 style={{
                   textDecoration: "none",
                   color: "#ccc",
-                  marginRight: "7px",
+                  marginRight: "15px",
                 }}
                 to="/contacts"
               >
@@ -72,7 +72,7 @@ const Header = () => {
                 style={{
                   textDecoration: "none",
                   color: "#ccc",
-                  marginRight: "7px",
+                  marginRight: "15px",
                 }}
                 to="/blog"
               >
