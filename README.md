@@ -1,4 +1,4 @@
 ## Просто сайт на реакте
 
-# npm install
-# npm start
+### npm install
+### npm start
