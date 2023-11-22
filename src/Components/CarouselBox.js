@@ -1,6 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import { CarouselItem } from "react-bootstrap";
-import { data } from "../features/json";
+import { data } from "../JSON/carouselData";
 
 const CarouselBox = () => {
   return (
