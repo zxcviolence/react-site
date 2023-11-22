@@ -21,16 +21,18 @@ const Header = () => {
         variant="dark"
       >
         <Container>
-          <Navbar.Brand>
-            <img
-              src={logo}
-              height="30"
-              width="30"
-              alt="logo"
-              className="d-inline-block align-top"
-            />{" "}
-            React site
-          </Navbar.Brand>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Navbar.Brand>
+              <img
+                src={logo}
+                height="30"
+                width="30"
+                alt="logo"
+                className="d-inline-block align-top"
+              />{" "}
+              React site
+            </Navbar.Brand>
+          </Link>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
