@@ -44,7 +44,7 @@ const Header = () => {
                 }}
                 to="/"
               >
-                Home
+                <div>Home</div>
               </Link>
               <Link
                 style={{
