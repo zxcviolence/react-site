@@ -7,11 +7,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
-import { Routes, Route, Link } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Blog from "../Pages/Blog";
-import Contacts from "../Pages/Contacts";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo192.svg";
 
 const Header = () => {
@@ -90,13 +86,6 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="contacts" element={<Contacts />} />
-      </Routes>
     </>
   );
 };
