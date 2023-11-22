@@ -1,5 +1,5 @@
 import React from "react";
-import CarouselBox from "../Components/CarouselBox";
+import CarouselBox from "../components/CarouselBox";
 import { Container, CardGroup, Card, Button } from "react-bootstrap";
 import { data } from "../JSON/teamData";
 
