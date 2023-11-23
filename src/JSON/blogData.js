@@ -19,25 +19,31 @@ export const blogCategories = [
   {
     id: 1,
     name: "HTML/CSS",
+    link: "https://htmlacademy.ru/courses/basic-html-css",
   },
   {
     id: 2,
     name: "Javascript",
+    link: "https://learn.javascript.ru/",
   },
   {
     id: 3,
     name: "Typescript",
+    link: "https://www.typescriptlang.org/"
   },
   {
     id: 4,
     name: "Python",
+    link: "https://www.python.org/"
   },
   {
     id: 5,
     name: "Java",
+    link: "https://javarush.com/"
   },
   {
     id: 6,
     name: "C++",
+    link: "https://metanit.com/cpp/"
   },
 ];

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, Col, Container, ListGroup, Row } from "react-bootstrap";
 import { data, blogCategories } from "../JSON/blogData";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -25,7 +26,15 @@ const Blog = () => {
             <ListGroup variant="flush">
               {blogCategories.map((item) => {
                 return (
-                  <ListGroup.Item key={item.id}>{item.name}</ListGroup.Item>
+                  <ListGroup.Item key={item.id}>
+                    <Link
+                      target="_blank"
+                      style={{ textDecoration: "none", color: "black" }}
+                      to={item.link}
+                    >
+                      {item.name}
+                    </Link>
+                  </ListGroup.Item>
                 );
               })}
             </ListGroup>
