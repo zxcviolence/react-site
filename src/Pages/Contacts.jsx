@@ -43,7 +43,11 @@ const Contacts = () => {
       setEmail("");
       setMessage("");
     } catch (error) {
-      alert(error.message);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: `Something went wrong! ${error.message}`,
+      });
     }
   };
 
