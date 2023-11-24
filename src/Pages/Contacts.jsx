@@ -33,20 +33,46 @@ const Contacts = () => {
         data
       );
       if (res.data === "OK") {
+        let timerInterval;
         Swal.fire({
-          title: "Thanks!",
-          text: "Your email has been sent",
+          title: "Thanks! Your email has been sent",
           icon: "success",
+          html: "The window will close automatically in <b></b> milliseconds",
+          timer: 2000,
+          timerProgressBar: true,
+          didOpen: () => {
+            Swal.showLoading();
+            const timer = Swal.getPopup().querySelector("b");
+            timerInterval = setInterval(() => {
+              timer.textContent = `${Swal.getTimerLeft()}`;
+            }, 1000);
+          },
+          willClose: () => {
+            clearInterval(timerInterval);
+          },
         });
       }
-      setName("");
-      setEmail("");
+      setName(name);
+      setEmail(email);
       setMessage("");
     } catch (error) {
+      let timerInterval;
       Swal.fire({
+        title: `Oops... Something went wrong! ${error.message}`,
         icon: "error",
-        title: "Oops...",
-        text: `Something went wrong! ${error.message}`,
+        html: "The window will close automatically in <b></b> milliseconds",
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: () => {
+          Swal.showLoading();
+          const timer = Swal.getPopup().querySelector("b");
+          timerInterval = setInterval(() => {
+            timer.textContent = `${Swal.getTimerLeft()}`;
+          }, 1000);
+        },
+        willClose: () => {
+          clearInterval(timerInterval);
+        },
       });
     }
   };
