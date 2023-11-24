@@ -101,7 +101,7 @@ const Contacts = () => {
           <Form.Text>We'll never share your email with anyone else</Form.Text>
         </Form.Group>
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Example textarea</Form.Label>
+          <Form.Label>Enter text</Form.Label>
           <Form.Control
             as="textarea"
             rows="3"
