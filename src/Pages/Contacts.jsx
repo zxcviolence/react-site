@@ -34,7 +34,7 @@ const Contacts = () => {
       );
       if (res.data === "OK") {
         Swal.fire({
-          title: "Good job!",
+          title: "Thanks!",
           text: "Your email has been sent",
           icon: "success",
         });
